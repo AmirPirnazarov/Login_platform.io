@@ -1,16 +1,33 @@
-﻿body{
-  background-color: #e8e8e8;
-  font-family: Muller; /* Имя шрифта */
-  src: url(font/MullerExtraBold.ttf); /* Путь к файлу со шрифтом */
+﻿@font-face {
+  font-family: 'Muller';
+  src: local("MullerBold"), url(../font/MullerBold.ttf) format('ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Muller';
+  src: local("MullerLight"), url(../font/MullerLight.ttf) format('ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Muller';
+  src: local("MullerMedium"), url(../font/MullerMedium.ttf) format('ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Muller';
+  src: local("MullerExtraBold"), url(../font/MullerExtraBold.ttf) format('ttf');
+   font-weight: 700;
 }
 
-@font-face {
-    font-family: Muller; /* Имя шрифта */
-    src: url(font/MullerExtraBold.ttf); /* Путь к файлу со шрифтом */
-   }
-    
-   
-   
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+}
+body{
+  background-color: #e8e8e8; 
+}
 .logo-regist{
   width: 150px;
   margin:30px 0px 0px 70px;
@@ -30,6 +47,7 @@
 }
 
 .login-box p:first-child {
+  font-family: Muller;
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
@@ -46,6 +64,8 @@
 }
 
 .login-box .user-box input {
+  font-family: Muller;
+  font-weight: 300;
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -58,6 +78,8 @@
 }
 
 .login-box .user-box label {
+  font-family: Muller;
+  font-weight: 300;
   position: absolute;
   top: 0;
   left: 0;
@@ -77,10 +99,10 @@
 }
 
 .login-box form a {
+  font-family: Muller;
   position: relative;
   display: inline-block;
   padding: 10px 25px;
-  font-weight: bold;
   color: #fff;
   font-size: 16px;
   text-decoration: none;
